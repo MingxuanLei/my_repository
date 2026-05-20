@@ -358,6 +358,9 @@ def main():
 
             if choice == "s":
                 print_motor_status(can)
+                q_now = robot.motor2dh(can.motors)
+                print("[NOW DH rad] =", ["{:.4f}".format(float(x)) for x in q_now])
+                print("[NOW DH deg] =", ["{:.2f}".format(float(x * 180.0 / 3.141592653589793)) for x in q_now])
                 continue
 
             if choice not in ("1", "2", "3"):
