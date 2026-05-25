@@ -14,7 +14,6 @@ from USBCANFD import USBCANFD
 from DMMotor import DMMotor
 from Robot import Robot
 
-
 MODE_MIT = 1
 MODE_PV = 2
 MODE_PVT = 4
@@ -37,12 +36,12 @@ GRAVITY_TORQUE_SCALE = [0.0, 1.1, 1.1, 1.0, 1.0, 0.0]
 
 # [NOW DH rad] = ['-3.1367', '-3.1357', '3.1036', '0.0496', '-1.5958', '-0.1751']
 PV_TARGET_DH_Q = [
-    -3.13,
+    3.10,
     -3.13,
     3.10,
     0.05,
     -1.40,
-    -0.17,
+    -0.07,
 ]
 
 # PV 模式速度限制，越小运动越慢
